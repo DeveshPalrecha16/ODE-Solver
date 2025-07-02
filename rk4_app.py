@@ -1,11 +1,10 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 
-# Define the function f(t, y) = dy/dt
-def f(t, y):
-    return t + y  # Example ODE
 
-# RK4 method for a single first-order ODE
+def f(t, y):
+    return t + y  
+
 def rk4_method(f, t0, y0, h, t_end):
     t_values = [t0]
     y_values = [y0]
@@ -28,12 +27,11 @@ def rk4_method(f, t0, y0, h, t_end):
     return t_values, y_values
 
 
-# --- Streamlit App ---
 
 st.title("Runge-Kutta (RK4) ODE Solver")
 st.markdown("Solves ODE of the form: `dy/dt = t + y`")
 
-# Input section
+
 st.subheader("Enter Parameters")
 t0 = st.number_input("Initial time (t₀)", value=0.0)
 y0 = st.number_input("Initial value (y₀)", value=1.0)
@@ -50,7 +48,7 @@ if st.button("Solve ODE"):
     st.subheader("Results Table")
     st.dataframe({"t": t_vals, "y(t)": y_vals})
 
-    # Plot results
+  
     st.subheader("Solution Plot")
     fig, ax = plt.subplots()
     ax.plot(t_vals, y_vals, marker='o', label="y(t)")
