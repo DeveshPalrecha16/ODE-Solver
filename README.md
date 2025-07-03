@@ -9,3 +9,5 @@ Features:
 	•	User inputs for functions, initial values, step size, and range
 	•	Easy-to-read output
 	•	Optional Streamlit app for a graphical interface
+
+
