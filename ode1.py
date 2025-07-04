@@ -9,9 +9,13 @@ def rk4(f,t0,y0,h,t_end):
         print(f"Step {steps}: t = {t:.4f}, y = {y:.4f}")
 
         k1=h*f(t,y)
+        
         k2=h*f(t+h/2,y+k1/2)
+        
         k3=h*f(t+h/2,y+k2/2)
+        
         k4=h*f(t+h,y+k3)
+        
         y += (1/6) * (k1 + 2*k2 + 2*k3 + k4)
         t += h 
 
