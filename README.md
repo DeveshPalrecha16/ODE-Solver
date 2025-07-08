@@ -1,7 +1,7 @@
 RK4 Solver in Python
 This repository provides a simple and clear implementation of the 4th Order Runge-Kutta (RK4) method for numerically solving ordinary differential equations (ODEs) in Python.
 
-🔧 Features
+ Features
 Straightforward implementation of the classical RK4 algorithm
 
 Interactive CLI to input initial conditions, step size, and final time
