@@ -17,5 +17,4 @@ rk4_solver.py – Main script containing the RK4 method and user interface
 Requirements :
 
 Python 3.x
-
 No external libraries used for solving the ODE'S
